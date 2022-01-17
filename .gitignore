@@ -1,0 +1,4 @@
+/MicroserviceWebApi/bin/*
+/MicroserviceWebApi/obj/*
+/.vs/*
+/MicroserviceWebApi/.vs/*
