@@ -1,4 +1,10 @@
 /MicroserviceWebApi/bin/*
 /MicroserviceWebApi/obj/*
-/.vs/*
 /MicroserviceWebApi/.vs/*
+/WeatherWebApi/bin/*
+/WeatherWebApi/obj/*
+/WeatherWebApi/.vs/*
+/ApiGateway/bin/*
+/ApiGateway/obj/*
+/ApiGateway/.vs/*
+/.vs/*
