@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  apigateway:
+    image: ${DOCKER_REGISTRY-}apigateway
+    build:
+      context: .
+      dockerfile: ApiGateway\Dockerfile
+
+  microservicewebapi:
+    image: ${DOCKER_REGISTRY-}microservicewebapi
+    build:
+      context: .
+      dockerfile: MicroserviceWebApi\Dockerfile
+
+
+  weatherwebapi:
+    image: ${DOCKER_REGISTRY-}weatherwebapi
+    build:
+      context: .
+      dockerfile: WeatherWebApi\Dockerfile
+

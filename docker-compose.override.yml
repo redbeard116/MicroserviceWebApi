@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  apigateway:
+    container_name: apigateway
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ApiSettings:ValuesUrl=http://microservicewebapi"
+      - "ApiSettings:WeatherForecastUrl=http://weatherwebapi"
+    depends_on:
+      - microservicewebapi
+      - weatherwebapi
+    ports:
+      - "8000:80"
+
+  microservicewebapi:
+    container_name: microservicewebapi
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8001:80"
+
+  weatherwebapi:
+    container_name: weatherwebapi
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8002:80"

@@ -8,3 +8,5 @@
 /ApiGateway/obj/*
 /ApiGateway/.vs/*
 /.vs/*
+/bin/*
+/obj/*
